@@ -1,9 +1,3 @@
-
-
-
-
-
-
 ## Key Value project
 Prepared for: Key Value assignment, 1&1
 Prepared by:Ovidiu Loghin
@@ -11,7 +5,7 @@ Prepared by:Ovidiu Loghin
 	
 ## SUMMARY
 
-#Objective
+**##Objective**
 Implement a key-value store service:
 Service exposes a RESTful API that supports the following actions:
 get: find key in the storage and return JSON-encoded key-value pair, ex: {"key": "my-key", "value": "my-val"}
