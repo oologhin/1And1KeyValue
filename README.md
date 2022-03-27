@@ -28,9 +28,8 @@ KeyValue Service: could be on distinctive machine or on one single machine alloc
 Both controller and federated services are written in Java, using Spring booth framework. The value are store in every local service file. Every value is spread throughout the pollution of services federated to the controller.
 Every operation on a separate instance of the service is spread to any other instance. In case one service is down the Federation controller will unsubscribe the service automatically. In case service is restated it will look to subscribe to the federation controller.
 All operations are web api and Ould be accessed on http.
-##
 
-##SOLUTION in Details
+## SOLUTION in Details
 
  The solution contains two distinct parts:
 Federation Controller : needs to be started first and configured in application.properties of each service
@@ -67,7 +66,7 @@ Services could be interrogate to /service api
 A Key Value Service tries every time to sync with the controller. First pings the controller, then calls the service. 
 Flowing paths are useful to be included in the test scenarios.
 
-##Key Value Service Api 
+## Key Value Service Api 
 
 GET
 http://{{ip}}:{{port}}
@@ -139,7 +138,7 @@ POST
 
 
 
-##Build and run the solution
+## Build and run the solution
 
 Within the archive you will sed the following content
 
@@ -193,13 +192,13 @@ Docker Images needs to look like this
 
 
 
-##Run controller 
+## Run controller 
 
 Run the containerised with: docker run -p 8081:8080 fedctl
 For now postman http://localhost:8081/services/count will return 0 as no key value service has subscribed
 
 
-##2. Find the docker ip of Federation to make any key value aware 
+**2. Find the docker ip of Federation to make any key value aware** 
 docker container ls will point out the my container id is 4269fe26731c
 
 docker container inspect 4269fe26731 will show that my Federation controller is instantiated on "IPAddress": “172.17.0.2", port 8080
@@ -211,7 +210,7 @@ nano src/main/resources/application.properties
 
 Make sure the Federation controller ip an port are the one in docker				
 
-##3. Build and run multiple Key Value Service instances in docker
+**3. Build and run multiple Key Value Service instances in docker**
 
 mvn clean install docker:build
 Docker images will look like this 
@@ -224,7 +223,7 @@ The controller http://localhost :8081/services will show the subscribed services
 The Values on the new instances are http://localhost:8082/keys
 
 
-##4. Running a new instance and make CRUD operations in both instances
+**4. Running a new instance and make CRUD operations in both instances**
 Docker run docker run -p 8083:8099 kvjsonsrv
 
 The second instance instantiated correctly and subscribed to controller
@@ -242,7 +241,7 @@ The second instance instantiated correctly and subscribed to controller
 
 
 
-##5. Running a delete and put command on one instance will spread keys to all node
+**5. Running a delete and put command on one instance will spread keys to all node**
 Deleting key40 from instance running on 8082 will delete value from also from 8083
 
 
@@ -274,7 +273,7 @@ Deleting key40 from instance running on 8082 will delete value from also from 80
 
 
 
-##Final Consideration
+## Final Consideration
 
 All CRUD operations behaves the same.
 Key-Values are stored in any instance the same. 
