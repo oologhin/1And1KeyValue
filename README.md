@@ -2,10 +2,11 @@
 Prepared for: Key Value assignment, 1&1
 Prepared by:Ovidiu Loghin
 20 January 2019
-	
+##
+
 ## SUMMARY
 
-**##Objective**
+**Objective**
 Implement a key-value store service:
 Service exposes a RESTful API that supports the following actions:
 get: find key in the storage and return JSON-encoded key-value pair, ex: {"key": "my-key", "value": "my-val"}
@@ -13,21 +14,23 @@ put: write given (JSON-encoded) key-value pair to storage
 delete: find key in storage and delete its key-value pair
 size: return number of key-value pairs in the storage * keys are strings of 1-64 characters restricted to character set: a-zA-Z0-9_- * values are strings with maximum length of 1KB (1024 bytes), all characters are allowed (binary data)
 
-##Goals
+**Goals**
 Horizontal scalability: multiple instances of the service running on different machines, operating on the same storage. Implement the storage on disk / filesystem, any solution is acceptable as long as it supports big data (millions or billions of pairs)
 Key-value store must be generally consistent, but small inconsistencies are allowed for edge cases: key written on one node might not be instantly available on another node
 
-##Solution
+**Solution**
 In order to make pollution scalable and keep consistence I have implemented services that are centrally controlled.  Every service that may have operation on key-value storage could be instantiated distinctive, but will announce his instantiation to a controller. Controller will insure consistency operation throughout every instance on every machine.
  The solution contains two distinct parts:
 Federation Controller : needs to be started first and configured in application.properties of each service
 KeyValue Service: could be on distinctive machine or on one single machine allocating different ports
 
-##Project Outline
+**Project Outline**
 Both controller and federated services are written in Java, using Spring booth framework. The value are store in every local service file. Every value is spread throughout the pollution of services federated to the controller.
 Every operation on a separate instance of the service is spread to any other instance. In case one service is down the Federation controller will unsubscribe the service automatically. In case service is restated it will look to subscribe to the federation controller.
 All operations are web api and Ould be accessed on http.
-SOLUTION in Details
+##
+
+##SOLUTION in Details
 
  The solution contains two distinct parts:
 Federation Controller : needs to be started first and configured in application.properties of each service
