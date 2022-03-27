@@ -1,0 +1,13 @@
+/Users/ovidiu.loghin/Dropbox/Projects/KeyValue1and1/KeyValueServiceJson/src/main/java/net/diezus/client/HttpClient.java
+/Users/ovidiu.loghin/Dropbox/Projects/KeyValue1and1/KeyValueServiceJson/src/main/java/net/diezus/utils/Utils.java
+/Users/ovidiu.loghin/Dropbox/Projects/KeyValue1and1/KeyValueServiceJson/src/main/java/net/diezus/utils/json/repo/KeyRepository.java
+/Users/ovidiu.loghin/Dropbox/Projects/KeyValue1and1/KeyValueServiceJson/src/main/java/net/diezus/client/OutSyncClient.java
+/Users/ovidiu.loghin/Dropbox/Projects/KeyValue1and1/KeyValueServiceJson/src/main/java/net/diezus/client/ConnectionTools.java
+/Users/ovidiu.loghin/Dropbox/Projects/KeyValue1and1/KeyValueServiceJson/src/main/java/net/diezus/utils/Consistency.java
+/Users/ovidiu.loghin/Dropbox/Projects/KeyValue1and1/KeyValueServiceJson/src/main/java/net/diezus/utils/json/JsonSimpleReader.java
+/Users/ovidiu.loghin/Dropbox/Projects/KeyValue1and1/KeyValueServiceJson/src/main/java/net/diezus/srv/keyvalue/controller/KeyController.java
+/Users/ovidiu.loghin/Dropbox/Projects/KeyValue1and1/KeyValueServiceJson/src/main/java/net/diezus/utils/model/Key.java
+/Users/ovidiu.loghin/Dropbox/Projects/KeyValue1and1/KeyValueServiceJson/src/main/java/net/diezus/srv/keyvalue/KeyValueServiceJsonApplication.java
+/Users/ovidiu.loghin/Dropbox/Projects/KeyValue1and1/KeyValueServiceJson/src/main/java/net/diezus/srv/keyvalue/controller/RootController.java
+/Users/ovidiu.loghin/Dropbox/Projects/KeyValue1and1/KeyValueServiceJson/src/main/java/net/diezus/utils/json/repo/KeyRepositoryImpl.java
+/Users/ovidiu.loghin/Dropbox/Projects/KeyValue1and1/KeyValueServiceJson/src/main/java/net/diezus/utils/json/JsonSimpleWriter.java

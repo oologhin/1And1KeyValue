@@ -1,0 +1,10 @@
+net/diezus/fed/controller/FederationController.class
+net/diezus/fed/model/ServiceInstance.class
+net/diezus/fed/repo/RunningServicesImpl.class
+net/diezus/fed/controller/FederationController$1.class
+net/diezus/fed/repo/RunningServices.class
+net/diezus/fed/FedControllerApplication.class
+net/diezus/client/ConnectionTools.class
+net/diezus/fed/model/Key.class
+net/diezus/utils/Utils.class
+net/diezus/client/HttpClient.class

@@ -1,0 +1,17 @@
+net/diezus/utils/json/JsonSimpleReader.class
+net/diezus/utils/json/repo/KeyRepository.class
+net/diezus/utils/json/repo/KeyRepositoryImpl.class
+net/diezus/client/OutSyncClient.class
+net/diezus/utils/json/JsonSimpleWriter.class
+net/diezus/srv/keyvalue/controller/KeyController$1.class
+net/diezus/utils/Consistency.class
+net/diezus/srv/keyvalue/controller/RootController.class
+net/diezus/utils/Consistency$Policy.class
+net/diezus/client/OutSyncClient$1.class
+net/diezus/client/OutSyncClient$Action.class
+net/diezus/client/ConnectionTools.class
+net/diezus/srv/keyvalue/controller/KeyController.class
+net/diezus/utils/model/Key.class
+net/diezus/utils/Utils.class
+net/diezus/client/HttpClient.class
+net/diezus/srv/keyvalue/KeyValueServiceJsonApplication.class
